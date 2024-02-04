@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page 2</title>
+    <link rel="stylesheet" href="style.css" id="theme-style" />
+    <script
+      src="https://kit.fontawesome.com/84a4d5b7f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" style="background-color: var(--bg-color)">
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html#home" class="active">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#achievements">Achievements</a>
+        <a href="index.html#blog">Blogs</a>
+        <button type="button" id="theme-toggle" title="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </nav>
+    </header>
+    <section class="blog-previewweb">
+      <h2>Roadmap to Data Structures and Algorithms Mastery</h2>
+      <br />
+      <h3>1. Establish Fundamentals</h3>
+      <p>
+        Begin by understanding basic concepts in programming and mathematics.
+      </p>
+      <br />
+      <h3>2. Learn the Basics</h3>
+      <p>
+        Start with fundamental data structures like arrays, linked lists,
+        stacks, and queues. Understand their operations, implementations, and
+        time complexity.
+      </p>
+      <br />
+      <h3>3. Master Algorithmic Techniques</h3>
+      <p>
+        Study and practice common algorithmic techniques such as recursion,
+        divide and conquer, dynamic programming, and greedy algorithms.
+      </p>
+      <br />
+      <h3>4. Explore Advanced Data Structures</h3>
+      <p>
+        Dive deeper into advanced data structures like trees (binary trees, AVL
+        trees, red-black trees), graphs, and hash tables. Learn their
+        properties, operations, and applications.
+      </p>
+      <br />
+      <h3>5. Understand Sorting and Searching</h3>
+      <p>
+        Study various sorting algorithms (e.g., bubble sort, merge sort, quick
+        sort) and searching algorithms (e.g., binary search). Understand their
+        time and space complexity.
+      </p>
+      <br />
+      <h3>6. Practice Problem-Solving</h3>
+      <p>
+        Solve a wide range of DSA problems on platforms like LeetCode,
+        HackerRank, and Codeforces. Focus on understanding problem-solving
+        strategies and writing efficient code.
+      </p>
+      <br />
+      <h3>7. Implement DSA in Real Projects</h3>
+      <p>
+        Apply your DSA knowledge in real-world projects. Develop applications
+        that require efficient data structures and algorithms to solve problems.
+      </p>
+      <br />
+      <h3>8. Participate in Contests and Competitions</h3>
+      <p>
+        Participate in coding contests and competitions regularly. They provide
+        valuable experience in solving challenging problems under time
+        constraints.
+      </p>
+      <br />
+      <h3>9. Continuously Review and Refine</h3>
+      <p>
+        Regularly review concepts and algorithms. Keep refining your
+        problem-solving skills by tackling increasingly complex problems and
+        learning new techniques.
+      </p>
+      <br />
+      <h3>10. Collaborate and Share Knowledge</h3>
+      <p>
+        Join online communities, forums, and study groups to collaborate with
+        other learners. Share your knowledge and learn from others' experiences.
+      </p>
+      <br />
+      <h3>11. Stay Updated with Latest Trends</h3>
+      <p>
+        Keep abreast of the latest developments in DSA, including new
+        algorithms, data structures, and problem-solving techniques. Follow
+        research papers, blogs, and tutorials.
+      </p>
+      <br />
+      <h3>12. Never Stop Learning</h3>
+      <p>
+        DSA is a vast field with constant advancements. Embrace the journey of
+        lifelong learning and continuously strive to enhance your skills and
+        expertise.
+      </p>
+      <br />
+      <h3>Conclusion</h3>
+      <p>
+        Embark on your journey to master Data Structures and Algorithms step by
+        step, focusing on understanding core concepts, solving diverse problems,
+        and applying your knowledge in practical scenarios.
+      </p>
+      <br />
+    </section>
+    <br />
+    <section class="commentlike">
+      <div id="blog2-comments" class="comments">
+        <div class="buttons">
+          <input
+            type="text"
+            class="text"
+            id="blog2-comment"
+            placeholder="Add a comment"
+          />
+        </div>
+        <br />
+        <button onclick="addComment('blog2')">Upload</button>
+        <button onclick="updateLikes('blog2')">Like</button>
+        <span id="blog2-likes">0</span> <i class="fa-regular fa-thumbs-up"></i>
+        <br /><br />
+        <p>Comments :</p>
+      </div>
+    </section>
+    <footer class="footerweb">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Raghav | All Rights Reserved</p>
+      </div>
+      <div class="footer-icon">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="blog2.js"></script>
+  </body>
+</html>

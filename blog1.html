@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page 1</title>
+    <link rel="stylesheet" href="style.css" id="theme-style" />
+    <script
+      src="https://kit.fontawesome.com/84a4d5b7f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" style="background-color: var(--bg-color)">
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html#home" class="active">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#achievements">Achievements</a>
+        <a href="index.html#blog">Blogs</a>
+        <button type="button" id="theme-toggle" title="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </nav>
+    </header>
+    <section class="blog-previewweb">
+      <h1>Roadmap to Web Development: A Beginner's Guide</h1>
+      <br />
+      <h3>1. Learn the Basics -</h3>
+      <p>
+        Start with HTML, CSS, and JavaScript. They form the foundation of web
+        development.
+      </p>
+      <br />
+      <h3>2. Master Responsive Design</h3>
+      <p>
+        Ensure your websites look great on all devices by learning responsive
+        design techniques.
+      </p>
+      <br />
+      <h3>3. Explore Backend Development</h3>
+      <p>
+        Pick a backend language (e.g., PHP, Node.js, Python) and a database
+        system to add functionality to your websites.
+      </p>
+      <br />
+      <h3>4. Get Familiar with Version Control</h3>
+      <p>
+        Learn Git for managing your codebase and collaborating with other
+        developers.
+      </p>
+      <br />
+      <h3>5. Discover Frameworks and Libraries</h3>
+      <p>
+        Explore frontend frameworks like React and backend frameworks like
+        Express.js to streamline development.
+      </p>
+      <br />
+      <h3>6. Understand APIs and Web Services</h3>
+      <p>
+        Learn how to work with APIs to integrate third-party functionality into
+        your applications.
+      </p>
+      <br />
+      <h3>7. Prioritize Security</h3>
+      <p>
+        Understand common security threats and how to protect your applications
+        against them.
+      </p>
+      <br />
+      <h3>8. Optimize Performance</h3>
+      <p>
+        Learn techniques like lazy loading and caching to improve website
+        performance.
+      </p>
+      <br />
+      <h3>9. Commit to Continuous Learning</h3>
+      <p>
+        Stay updated with new technologies and best practices to keep your
+        skills sharp.
+      </p>
+      <br />
+      <h3>Conclusion</h3>
+      <p>
+        Embark on the journey of web development step by step, focusing on
+        building a strong foundation and never stop learning.
+      </p>
+    </section>
+    <br />
+    <section class="commentlike">
+      <div id="blog1-comments" class="comments">
+        <div class="buttons">
+          <input
+            type="text"
+            class="text"
+            id="blog1-comment"
+            placeholder="Add a comment"
+          />
+        </div>
+        <br />
+        <button onclick="addComment('blog1')">Upload</button>
+        <button onclick="updateLikes('blog1')">Like</button>
+        <span id="blog1-likes">0</span> <i class="fa-regular fa-thumbs-up"></i>
+        <br /><br />
+        <p>Comments :</p>
+      </div>
+    </section>
+    <footer class="footerweb">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Raghav | All Rights Reserved</p>
+      </div>
+      <div class="footer-icon">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="blog1.js"></script>
+  </body>
+</html>
