@@ -6,12 +6,13 @@ function openblog1(blog1Id) {
 }
 
 function updateLikes(blog1Id) {
-  if (blog1Data[blog1Id]) {
-    blog1Data[blog1Id].likes++;
-    localStorage.setItem("blog1Data", JSON.stringify(blog1Data));
-    document.getElementById(`${blog1Id}-likes`).textContent =
-      blog1Data[blog1Id].likes;
-  }
+  // if (blog1Data[blog1Id]) {
+  if (blog1Data[blog1Id].likes != 0) blog1Data[blog1Id].likes = 0;
+  else blog1Data[blog1Id].likes = 1;
+  localStorage.setItem("blog1Data", JSON.stringify(blog1Data));
+  document.getElementById(`${blog1Id}-likes`).textContent =
+    blog1Data[blog1Id].likes;
+  // }
 }
 
 function addComment(blog1Id) {
@@ -52,7 +53,6 @@ window.onload = function () {
   Object.keys(blog1Data).forEach((blog1Id) => {
     document.getElementById(`${blog1Id}-likes`).textContent =
       blog1Data[blog1Id].likes;
-
     let commentsSection = document.getElementById(`${blog1Id}-comments`);
     blog1Data[blog1Id].comments.forEach((comment) => {
       let newComment = document.createElement("div");

@@ -7,13 +7,13 @@ function openblog2(blog2Id) {
 
 function updateLikes(blog2Id) {
   if (blog2Data[blog2Id]) {
-    blog2Data[blog2Id].likes++;
+    if (blog2Data[blog2Id].likes != 0) blog2Data[blog2Id].likes = 0;
+    else blog2Data[blog2Id].likes = 1;
     localStorage.setItem("blog2Data", JSON.stringify(blog2Data));
     document.getElementById(`${blog2Id}-likes`).textContent =
       blog2Data[blog2Id].likes;
   }
 }
-
 function addComment(blog2Id) {
   let commentInput = document.getElementById(`${blog2Id}-comment`);
   let comment = commentInput.value.trim();
@@ -52,7 +52,6 @@ window.onload = function () {
   Object.keys(blog2Data).forEach((blog2Id) => {
     document.getElementById(`${blog2Id}-likes`).textContent =
       blog2Data[blog2Id].likes;
-
     let commentsSection = document.getElementById(`${blog2Id}-comments`);
     blog2Data[blog2Id].comments.forEach((comment) => {
       let newComment = document.createElement("div");
